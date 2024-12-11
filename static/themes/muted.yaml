@@ -27,3 +27,19 @@ theme:
   navigate-background-color: rgba(115, 115, 115, 0.25)
   app-color: '#171c1f'
   modal-background-color-modal: rgb(31, 29, 26, 0.7)
+  # Hide the main header bar
+  app-header-background-color: "transparent"
+  app-header-text-color: "transparent"
+  app-header: |
+    ha-app-layout {
+      --app-header-background-color: transparent;
+    }
+    app-header {
+      display: none;
+    }
+    app-toolbar {
+      display: none;
+    }
+  # Remove the header spacing
+  header-height: 0px
+  header-padding: 0px
